@@ -9,16 +9,11 @@ const Review = ({
   summary_short
 }) => {
   return (
-
     <div
       key={headline}
-      className="review"
-    >
+      className="review">
       <header>
-        <a
-          className="review-link"
-          href={link.url}
-        >
+        <a className="review-link" href={link.url}>
           {headline}
         </a>
         <br/>
