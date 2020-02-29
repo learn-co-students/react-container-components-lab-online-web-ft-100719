@@ -21,6 +21,7 @@ describe('<MovieReviews />', () => {
       wrapper = shallow(<Noop />)
     } else {
       if (isStateless(MovieReviews)) {
+        console.log("Is shallow rendering")
         wrapper = shallow(<MovieReviews reviews={testReviews} />)
       } else {
         wrapper = mount(<MovieReviews reviews={testReviews} />)
