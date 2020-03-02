@@ -19,7 +19,7 @@ class LatestMovieReviewsContainer extends Component {
     componentDidMount() {
       fetch(URL)
         .then(res => res.json())
-        .then(response => this.setState({ reviews: response.results }));
+        .then(response => this.setState({ reviews: response.results }))
     }
   
     render() {
@@ -32,5 +32,4 @@ class LatestMovieReviewsContainer extends Component {
     }
   }
   
-  
-  export default LatestMovieReviewsContainer;
+  export default LatestMovieReviewsContainer
